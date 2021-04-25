@@ -1,7 +1,9 @@
-- name: Create a resource group
-  azure_rm_resourcegroup:
-    name: DSO-ANS-TOW-RG1
-    location: eastus
-    tags:
-        testing: DSO-testing
-        delete: never
+---
+- hosts: localhost
+  connection: local
+
+ tasks:
+    - name: Create resource group
+      azure_rm_resourcegroup:
+        name: DSO-RG-TOWERTEST
+        location: eastus
