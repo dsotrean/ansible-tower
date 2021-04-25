@@ -1,0 +1,7 @@
+- name: Create a resource group
+  azure_rm_resourcegroup:
+    name: DSO-ANS-TOW-RG1
+    location: westus
+    tags:
+        testing: DSO-testing
+        delete: never
